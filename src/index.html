@@ -12,7 +12,7 @@
   </head>
   <body>
     <h1>HTML Form</h1>
-    <form action="http://http://localhost:8080/"
+    <form action="http://localhost:8080/"
     method="post"
     class="block">
       <fieldset>
@@ -57,7 +57,7 @@
       </fieldset>
     </form>
     <form class="block"
-    action="http://http://localhost:8080/"
+    action="http://localhost:8080/"
     method="post">
       <fieldset>
         <legend>Registration</legend>
@@ -69,8 +69,58 @@
             <input type="password"
             name="password">
           </div>
-
         </div>
+      </fieldset>
+    </form>
+    <form action="http://localhost:8080/"
+    class="block">
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <div class="form-field">
+          Do you love cats?
+          <label for="cat">
+            <input type="radio" name="cat"
+            value="m"> Yes
+          </label>
+          <label for="cat">
+            <input type="radio" name="cat"
+            value="f"> No
+          </label>
+        </div>
+        What is your favourite color?
+        <label>
+          <input type="color"
+          id="head"
+          name="head" value="fff">
+        </label>
+        <div>
+          <label for="appt">What time do you go to bed?</label>
+          <input type="time" id="appt"
+          name="appt"
+          min="8:00"
+          max="24:00">
+        </div>
+        <label class="form-field">
+          What are your favourite brand of cars?
+          <select name="car" id="car">
+            <option value="f"
+            disabled
+            selected>
+              Choose a car
+            </option>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+        <label for="rate">How do you rate our work?</label>
+        <label>
+          <input type="range" id="rate"
+          name="rate"
+          min="0" max="100"
+          value="20"
+          step="10">
+        </label>
       </fieldset>
     </form>
     <script type="text/javascript" src="./main.js"></script>
