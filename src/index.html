@@ -12,7 +12,50 @@
   </head>
   <body>
     <h1>HTML Form</h1>
-    Hello
+    <form action="http://http://localhost:8080/"
+    method="post"
+    class="block">
+      <fieldset>
+        <legend>Personal information:</legend>
+        <label for="surname">
+          Surname:
+          <input type="text"
+          name="surname">
+        </label>
+        <div class="form-field">
+          Name:
+          <input type="text"
+          name="name">
+        </div>
+        <label for="age"
+        class="block">
+          How old are you?
+          <input type="number"
+          name="age"
+          placeholder="12" >
+        </label>
+        <div>
+          <label for="date-of-birth">
+            Full date of date-of-birth
+            <input type="data"
+            name="date-of-birth"
+            id="date-of-birth"
+            value="mm/dd/yyyy"
+            min="1932-01-01"
+            max="2020-01-01">
+          </label>
+        </div>
+        <div>
+          <label for="term-and-agreement">
+            I accept the term of the agreement
+            <input type="checkbox"
+            name="term"
+            id="term-and-agreement"
+            value="123">
+          </label>
+        </div>
+      </fieldset>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
