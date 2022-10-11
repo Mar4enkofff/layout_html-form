@@ -96,7 +96,7 @@
         <div>
           <label for="appt">What time do you go to bed?</label>
           <input type="time" id="appt"
-          name="appt"
+          name="attribute"
           min="8:00"
           max="24:00">
         </div>
@@ -123,6 +123,27 @@
         </label>
       </fieldset>
     </form>
+    <form class="block"
+    action="http://localhost:8080/"
+    method="post">
+      <fieldset>
+        <legend>Additional info:</legend>
+        <div class="form-field">Comments:
+          <textarea id="textarea"
+          name="additional"
+          min="1" max="100"
+          ></textarea>
+        </div>
+        <div class="form-field">
+          Would you recommend us?
+          <select name="recommend" required>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+    </form>
+    <button type="submit">Submit</button>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
