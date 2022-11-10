@@ -103,20 +103,25 @@
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
 
-        <label class="label">
+        <label  for="cats" class="label">
           Do you love cats?
           <input
             type="radio"
             name="cat"
-            value="Yes"
+            id="cat"
+            value="yes"
+            checked
           >
             Yes
-          <input
-            type="radio"
-            name="noCat"
-            value="No"
-          >
-            No
+          <label for="noCat">
+            <input
+              type="radio"
+              name="noCat"
+              id="noCat"
+              value="no"
+            >
+              No
+          </label>
         </label>
 
         <label for="color" class="label">
